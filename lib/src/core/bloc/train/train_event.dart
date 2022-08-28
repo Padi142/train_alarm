@@ -9,7 +9,8 @@ abstract class TrainEvent extends Equatable {
 
 class SetAlarmEvent extends TrainEvent {
   final AlarmModel alarm;
-  const SetAlarmEvent(this.alarm);
+  final BuildContext context;
+  const SetAlarmEvent(this.alarm, this.context);
 
   @override
   List<Object> get props => [];
@@ -17,8 +18,29 @@ class SetAlarmEvent extends TrainEvent {
 
 class SetRadius extends TrainEvent {
   final int radius;
+  const SetRadius(this.radius);
+
+  @override
+  List<Object> get props => [];
+}
+
+class SetKoordinaty extends TrainEvent {
   final LatLng koordinaty;
-  const SetRadius(this.radius, this.koordinaty);
+  const SetKoordinaty(this.koordinaty);
+
+  @override
+  List<Object> get props => [];
+}
+
+class Initial extends TrainEvent {
+  const Initial();
+
+  @override
+  List<Object> get props => [];
+}
+
+class RemoveAll extends TrainEvent {
+  const RemoveAll();
 
   @override
   List<Object> get props => [];

@@ -18,10 +18,7 @@ class GradientButton extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         decoration: BoxDecoration(
-          boxShadow: const [
-            BoxShadow(
-                color: Colors.black26, offset: Offset(0, 4), blurRadius: 5.0)
-          ],
+          boxShadow: const [BoxShadow(color: Colors.black26, offset: Offset(0, 4), blurRadius: 5.0)],
           gradient: const LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

@@ -1,4 +1,4 @@
-package com.example.teplate_app
+package com.padisoft.trainalarm
 
 import io.flutter.embedding.android.FlutterActivity
 

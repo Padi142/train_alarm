@@ -70,9 +70,7 @@ mixin _$TrainState {
 
 /// @nodoc
 abstract class $TrainStateCopyWith<$Res> {
-  factory $TrainStateCopyWith(
-          TrainState value, $Res Function(TrainState) then) =
-      _$TrainStateCopyWithImpl<$Res>;
+  factory $TrainStateCopyWith(TrainState value, $Res Function(TrainState) then) = _$TrainStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -86,15 +84,12 @@ class _$TrainStateCopyWithImpl<$Res> implements $TrainStateCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$$LoadingCopyWith<$Res> {
-  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
-      __$$LoadingCopyWithImpl<$Res>;
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) = __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res>
-    implements _$$LoadingCopyWith<$Res> {
-  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
-      : super(_value, (v) => _then(v as _$Loading));
+class __$$LoadingCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res> implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then) : super(_value, (v) => _then(v as _$Loading));
 
   @override
   _$Loading get _value => super._value as _$Loading;
@@ -112,8 +107,7 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Loading);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -200,15 +194,12 @@ abstract class Loading implements TrainState {
 
 /// @nodoc
 abstract class _$$SuccesCopyWith<$Res> {
-  factory _$$SuccesCopyWith(_$Succes value, $Res Function(_$Succes) then) =
-      __$$SuccesCopyWithImpl<$Res>;
+  factory _$$SuccesCopyWith(_$Succes value, $Res Function(_$Succes) then) = __$$SuccesCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SuccesCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res>
-    implements _$$SuccesCopyWith<$Res> {
-  __$$SuccesCopyWithImpl(_$Succes _value, $Res Function(_$Succes) _then)
-      : super(_value, (v) => _then(v as _$Succes));
+class __$$SuccesCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res> implements _$$SuccesCopyWith<$Res> {
+  __$$SuccesCopyWithImpl(_$Succes _value, $Res Function(_$Succes) _then) : super(_value, (v) => _then(v as _$Succes));
 
   @override
   _$Succes get _value => super._value as _$Succes;
@@ -226,8 +217,7 @@ class _$Succes implements Succes {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Succes);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$Succes);
   }
 
   @override
@@ -314,16 +304,13 @@ abstract class Succes implements TrainState {
 
 /// @nodoc
 abstract class _$$PartialCopyWith<$Res> {
-  factory _$$PartialCopyWith(_$Partial value, $Res Function(_$Partial) then) =
-      __$$PartialCopyWithImpl<$Res>;
+  factory _$$PartialCopyWith(_$Partial value, $Res Function(_$Partial) then) = __$$PartialCopyWithImpl<$Res>;
   $Res call({int radius, LatLng koordinaty});
 }
 
 /// @nodoc
-class __$$PartialCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res>
-    implements _$$PartialCopyWith<$Res> {
-  __$$PartialCopyWithImpl(_$Partial _value, $Res Function(_$Partial) _then)
-      : super(_value, (v) => _then(v as _$Partial));
+class __$$PartialCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res> implements _$$PartialCopyWith<$Res> {
+  __$$PartialCopyWithImpl(_$Partial _value, $Res Function(_$Partial) _then) : super(_value, (v) => _then(v as _$Partial));
 
   @override
   _$Partial get _value => super._value as _$Partial;
@@ -364,23 +351,15 @@ class _$Partial implements Partial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$Partial &&
-            const DeepCollectionEquality().equals(other.radius, radius) &&
-            const DeepCollectionEquality()
-                .equals(other.koordinaty, koordinaty));
+        (other.runtimeType == runtimeType && other is _$Partial && const DeepCollectionEquality().equals(other.radius, radius) && const DeepCollectionEquality().equals(other.koordinaty, koordinaty));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(radius),
-      const DeepCollectionEquality().hash(koordinaty));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(radius), const DeepCollectionEquality().hash(koordinaty));
 
   @JsonKey(ignore: true)
   @override
-  _$$PartialCopyWith<_$Partial> get copyWith =>
-      __$$PartialCopyWithImpl<_$Partial>(this, _$identity);
+  _$$PartialCopyWith<_$Partial> get copyWith => __$$PartialCopyWithImpl<_$Partial>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -463,22 +442,18 @@ abstract class Partial implements TrainState {
   int get radius;
   LatLng get koordinaty;
   @JsonKey(ignore: true)
-  _$$PartialCopyWith<_$Partial> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PartialCopyWith<_$Partial> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$ErrorCopyWith<$Res> {
-  factory _$$ErrorCopyWith(_$Error value, $Res Function(_$Error) then) =
-      __$$ErrorCopyWithImpl<$Res>;
+  factory _$$ErrorCopyWith(_$Error value, $Res Function(_$Error) then) = __$$ErrorCopyWithImpl<$Res>;
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$ErrorCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res>
-    implements _$$ErrorCopyWith<$Res> {
-  __$$ErrorCopyWithImpl(_$Error _value, $Res Function(_$Error) _then)
-      : super(_value, (v) => _then(v as _$Error));
+class __$$ErrorCopyWithImpl<$Res> extends _$TrainStateCopyWithImpl<$Res> implements _$$ErrorCopyWith<$Res> {
+  __$$ErrorCopyWithImpl(_$Error _value, $Res Function(_$Error) _then) : super(_value, (v) => _then(v as _$Error));
 
   @override
   _$Error get _value => super._value as _$Error;
@@ -511,20 +486,15 @@ class _$Error implements Error {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$Error &&
-            const DeepCollectionEquality().equals(other.error, error));
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$Error && const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  _$$ErrorCopyWith<_$Error> get copyWith =>
-      __$$ErrorCopyWithImpl<_$Error>(this, _$identity);
+  _$$ErrorCopyWith<_$Error> get copyWith => __$$ErrorCopyWithImpl<_$Error>(this, _$identity);
 
   @override
   @optionalTypeArgs
