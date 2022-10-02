@@ -19,16 +19,16 @@ class _RadiusPickerState extends State<RadiusPicker> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 60),
+      padding: const EdgeInsets.only(top: 50),
       child: Column(
         children: [
           SizedBox(
-            height: 50,
-            width: MediaQuery.of(context).size.width * 0.60,
+            height: 40,
+            width: MediaQuery.of(context).size.width * 0.45,
             child: Container(
               decoration: BoxDecoration(
-                  color: constants.secondaryColor,
-                  borderRadius: BorderRadius.circular(10)),
+                  color: constants.mainColor,
+                  borderRadius: BorderRadius.circular(50)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -39,15 +39,14 @@ class _RadiusPickerState extends State<RadiusPicker> {
                       },
                       icon: const Icon(Icons.remove)),
                   const SizedBox(
-                    width: 25,
+                    width: 15,
                   ),
                   Text(
                     "${widget.radius} km",
-                    style: const TextStyle(
-                        fontSize: 25, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 22),
                   ),
                   const SizedBox(
-                    width: 25,
+                    width: 15,
                   ),
                   IconButton(
                       onPressed: () {

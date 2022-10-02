@@ -9,7 +9,6 @@ import 'package:train_alarm/src/ui/components/map_picker.dart';
 import 'package:train_alarm/src/ui/components/radius_picker.dart';
 
 import 'package:train_alarm/constants.dart' as constants;
-import 'package:train_alarm/src/ui/components/toast_alert.dart';
 import 'package:train_alarm/src/ui/components/toast_error.dart';
 
 class MainPage extends StatefulWidget {
@@ -44,7 +43,7 @@ class _MainPage extends State<MainPage> {
                     koordinaty: koordinaty,
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Center(
                     child: MapPicker(
@@ -63,7 +62,7 @@ class _MainPage extends State<MainPage> {
                         height: 60,
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: constants.secondaryColor),
+                                primary: constants.mainColor),
                             onPressed: () {
                               BlocProvider.of<TrainBloc>(context)
                                   .add(const RemoveAll());
@@ -85,7 +84,7 @@ class _MainPage extends State<MainPage> {
                         height: 60,
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: constants.secondaryColor),
+                                primary: constants.mainColor),
                             onPressed: () {
                               BlocProvider.of<TrainBloc>(context)
                                   .add(SetAlarmEvent(
@@ -113,7 +112,7 @@ class _MainPage extends State<MainPage> {
                     height: 45,
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: constants.secondaryColor),
+                            primary: constants.mainColor),
                         onPressed: () {
                           FlutterRingtonePlayer.stop();
                         },

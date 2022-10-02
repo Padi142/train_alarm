@@ -42,7 +42,6 @@ class _RadiusPickerState extends State<MapPicker> {
           // The language of the autocompletion
           language: 'cs',
           //Search only work for this specific country
-          country: 'CZ',
           onSelected: (searchPlace.Place place) async {
             final geolocation = await place.geolocation;
             if (geolocation != null) {
@@ -56,7 +55,7 @@ class _RadiusPickerState extends State<MapPicker> {
           },
         ),
         const SizedBox(
-          height: 10,
+          height: 30,
         ),
         SizedBox(
           height: 250,
@@ -65,7 +64,7 @@ class _RadiusPickerState extends State<MapPicker> {
             children: [
               Container(
                 decoration: BoxDecoration(
-                    color: constants.secondaryColor,
+                    color: constants.mainColor,
                     borderRadius: BorderRadius.circular(10)),
                 child: Padding(
                   padding: const EdgeInsets.all(3),
@@ -138,7 +137,7 @@ class _RadiusPickerState extends State<MapPicker> {
                     style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
                       padding: const EdgeInsets.all(15),
-                      primary: constants.secondaryColor, // <-- Button color
+                      primary: constants.mainColor, // <-- Button color
                     ),
                     child: const Icon(Icons.my_location)),
               )

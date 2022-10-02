@@ -8,37 +8,52 @@ class AppTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10, top: 4),
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width * 0.90,
-        child: Container(
-            decoration: BoxDecoration(
-                color: constants.secondaryColor,
-                borderRadius: BorderRadius.circular(10)),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
+    return Column(
+      children: [
+        const SizedBox(
+          height: 10,
+        ),
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 0.90,
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: constants.secondaryColor,
+                  borderRadius: BorderRadius.circular(50)),
+              child: Padding(
+                padding: const EdgeInsets.all(4),
+                child: IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const InfoPage()),
+                      );
+                    },
+                    icon: const Icon(Icons.info)),
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 0.75,
+          child: Container(
+              decoration: BoxDecoration(
+                  color: constants.mainColor,
+                  borderRadius: BorderRadius.circular(10)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Center(
+                  child: Text(
                     title,
                     style: const TextStyle(
                         fontSize: 28, fontWeight: FontWeight.bold),
                   ),
-                  IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const InfoPage()),
-                        );
-                      },
-                      icon: const Icon(Icons.info))
-                ],
-              ),
-            )),
-      ),
+                ),
+              )),
+        ),
+      ],
     );
   }
 }

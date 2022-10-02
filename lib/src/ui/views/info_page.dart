@@ -24,7 +24,7 @@ class _InfoPageState extends State<InfoPage> {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Container(
                       decoration: BoxDecoration(
-                          color: constants.secondaryColor,
+                          color: constants.mainColor,
                           borderRadius: BorderRadius.circular(10)),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
